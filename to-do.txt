@@ -1,0 +1,2 @@
+1. check text limit
+2. check if last person submit btn -> submit text

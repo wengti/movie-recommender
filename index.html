@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>A movie recommender!</title>
+        <link rel='stylesheet' href='./index.css' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header class='container header-container'>
+            <img src='./images/header-icon.png' />
+            <h1>PopChoice</h1>
+        </header>
+
+        <main class='container'>
+            <form class='form-container' id='form'>
+                <div class='form-input'>
+                    <input type='text' placeholder='How many people?' 
+                        id='people-count' pattern='^[1-9]\d*$' required/>
+                    <div class='label'><p>People</p></div>
+                </div>
+
+                <div class='form-input'>
+                    <input type='text' placeholder='How much time do you have?' 
+                        id='hour-count' pattern='^[1-9]\d*$' required/>
+                    <div class='label'><p>Hours</p></div>
+                </div>
+
+                <div class='form-input'>
+                    <input type='text' placeholder='How much time do you have?' 
+                        id='minute-count' pattern="^([0-9]|[1-5][0-9])$" required/>
+                    <div class='label'><p>Minutes</p></div>
+                </div>
+                
+                <button type='submit' id='start-btn'>Start</button>
+            </form>
+        </main>
+
+        <script src='./index.js' type='module'></script>
+    </body>
+</html>

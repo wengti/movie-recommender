@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>A movie recommender!</title>
+        <link rel='stylesheet' href='./detail.css' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header class='container header-container'>
+            <a href='./index.html'><img src='./images/header-icon.png'/></a>
+            <h1>User <span id='userId'>1</span></h1>
+        </header>
+
+        <main class='container'>
+            <form class='form-container' id='form'>
+                
+                <div class='input-container'>
+                    <p class='question-text'>What is your favourite movie & why?</p>
+                    <textarea rows='5' id='fav-movie' maxlength='100' required></textarea>
+                </div>
+
+                <div class='input-container'>
+                    <p class='question-text'>Are you in the mood for something new or classic? </p>
+                    <div class='btn-group'>
+                        <button class='btn q1-btn selected' type='button' value='new'>New</button>
+                        <button class='btn q1-btn' type='button' value='classic'>Classic</button>
+                    </div>
+                </div>
+
+                <div class='input-container'>
+                    <p class='question-text'>What are you in the mood for? </p>
+                    <div class='btn-group'>
+                        <button class='btn q2-btn selected' type='button' value='fun'>Fun</button>
+                        <button class='btn q2-btn' type='button' value='serious'>Serious</button>
+                        <button class='btn q2-btn' type='button' value='inspiring'>Inspiring</button>
+                        <button class='btn q2-btn' type='button' value='scary'>Scary</button>
+                    </div>
+                </div>
+
+                <div class='input-container'>
+                    <p class='question-text'>Who is your favorite film person and why?</p>
+                    <textarea rows='3' id='fav-film-person' maxlength='100' required></textarea>
+                </div>
+
+                <button type='submit' class='submit-btn' id='submit-btn'>Next Person</button>
+
+            </form>
+        </main>
+
+        <script src='./detail.js' type='module'></script>
+    </body>
+</html>

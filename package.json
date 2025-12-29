@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "vite": "^7.3.0"
+  },
+  "dependencies": {
+    "@langchain/textsplitters": "^1.0.1",
+    "@supabase/supabase-js": "^2.89.0",
+    "openai": "^6.15.0"
+  },
+  "type": "module"
+}

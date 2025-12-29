@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>A movie recommender!</title>
+        <link rel='stylesheet' href='./result.css' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header class='container header-container'>
+            <h1 id='poster-title'>Thinking... </h1>
+        </header>
+
+        <main class='container main-container'>
+            <div class='poster-container'>
+                <img src='./images/buffering.gif' id='poster-img'>
+            </div>
+            <p class='movie-description' id='movie-description'>Analyzing possible common preferences...</p>
+            <div class='btn-group'>
+                <button class='btn' id='last-btn'>Last Movie</button>
+                <button class='btn' id='home-btn'>Home</button>
+                <button class='btn' id='next-btn'>Next Movie</button>        
+            </div>
+        </main>
+
+        <script src='./result.js' type='module'></script>
+    </body>
+</html>
