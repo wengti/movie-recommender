@@ -110,6 +110,8 @@ async function findMovie() {
     const context = contextArr.map(entry => entry.content).join(', ')
     const input = `Context: \n${context}\n\n Query: \n${query}`
 
+    console.log(input)
+
     const elaborationUrl = 'https://movie-recommender-worker.cloudflare-demo-wengti.workers.dev/'
     const elaborationOptions = {
         method: 'POST',
