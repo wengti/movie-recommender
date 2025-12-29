@@ -177,6 +177,8 @@ async function createMovieList(movieResponses) {
         })
     }
 
+    console.log(movieList)
+
 
 
 }
@@ -202,8 +204,8 @@ function renderPage(pageCount) {
             disableBtn(lastBtn, false)
         }
         else {
-            disableBtn(nextBtn, true)
-            disableBtn(lastBtn, true)
+            disableBtn(nextBtn, false)
+            disableBtn(lastBtn, false)
         }
     }
 }
