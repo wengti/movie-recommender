@@ -17,8 +17,6 @@
 // console.log(fullPosterPath)
 
 
-
-
 const posterUrl = 'http://www.omdbapi.com/?apikey=1e06bc85&s=' + 'Top%20Gun:%20Maverick'
 const response = await fetch(posterUrl)
 const data = await response.json()

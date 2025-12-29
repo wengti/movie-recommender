@@ -149,7 +149,7 @@ async function createMovieList(movieResponses) {
     const filteredMovieResponses = movieResponses.filter((entry, idx) => idx % 2 === 0)
     const posterPathArr = await Promise.all(filteredMovieResponses.map(async (entry) => {
         const movieName = entry.trim().replaceAll(" ", "%20")
-        const posterUrl = 'http://www.omdbapi.com/?apikey=1e06bc85&s=' + movieName
+        const posterUrl = 'https://www.omdbapi.com/?apikey=1e06bc85&s=' + movieName
         const response = await fetch(posterUrl)
         const data = await response.json()
         if (data.Response === 'False') {
